@@ -1,0 +1,10 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid;
+}
+.title{
+    margin: 0 auto 150px;
+    padding: 20px 10px;
+    background-color: aliceblue;
+}

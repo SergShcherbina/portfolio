@@ -1,0 +1,13 @@
+.works {
+    height: 100vh;
+    background-color: #e570ff;
+
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

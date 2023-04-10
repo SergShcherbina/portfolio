@@ -1,0 +1,15 @@
+.skills {
+    height: 100vh;
+    background-color: #8aff70;
+
+    display: flex;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}

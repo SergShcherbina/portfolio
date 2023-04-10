@@ -1,0 +1,22 @@
+.mainBlock {
+    height: 100vh;
+    background-color: #ffe770;
+
+    display: flex;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    width: 300px;
+    background-color: aliceblue;
+}
+.photo{
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+}
