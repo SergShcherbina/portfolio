@@ -1,9 +1,19 @@
 
 .wrapperWork {
-    display: flex;
-    flex-direction: column;
+    width: 300px;
     border: 1px solid
 }
 .img {
+    max-width: 300px;
     margin: 0 auto;
 }
+.img img {
+    width: 40px;
+}
+.description {
+
+}
+.wrapperWork a {
+    color: black;
+}
+

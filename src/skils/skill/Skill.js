@@ -1,13 +1,13 @@
 import React from 'react';
 import style from '../skill/Skill.module.css';
 
-export const Skill = () => {
+export const Skill = (props) => {
     return (
 
             <div className={style.skill} >
-                <img className={style.img} src={"#"}/>
+                <img className={style.img} src={props.img}/>
                 <h3 className={style.titleSkill}>
-                    React
+                    {props.mySkill}
                 </h3>
                 <div >
                     lorem lorem lorem lorem lorem lorem

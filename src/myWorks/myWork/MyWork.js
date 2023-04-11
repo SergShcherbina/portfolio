@@ -1,17 +1,17 @@
 import React from 'react';
 import style from "./MyWork.module.css"
 
-export const MyWork = () => {
+export const MyWork = (props) => {
     return (
         <div className={style.wrapperWork} >
             <div className={style.img} >
-                <img src={'#'} />
+                <img src={props.src} />
             </div>
-            <button>click me</button>
+            <button><a href={props.href}>click me</a></button>
             <h4>
-                name project
+                {props.name}
             </h4>
-            <div >  description </div>
+            <div className={style.description}>  {props.desr} </div>
         </div>
     );
 };

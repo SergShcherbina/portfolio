@@ -1,5 +1,5 @@
 .skills {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #8aff70;
 
     display: flex;
@@ -8,8 +8,12 @@
 
 .wrapper{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+@media(max-width: 940px) {
+    .wrapper {
+        justify-content: center;
+    }
 }

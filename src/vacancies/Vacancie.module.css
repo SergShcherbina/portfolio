@@ -1,10 +1,7 @@
 .vacancie {
-    height: 300px;
+    min-height: 300px;
     background-color: #7083ff;
 
     display: flex;
     align-items: center;
-}
-.vacancie h2 {
-    width: 540px
 }

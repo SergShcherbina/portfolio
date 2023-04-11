@@ -1,0 +1,25 @@
+.contacts {
+    height: 300px;
+    background-color: #0a1a83;
+
+    display: flex;
+    align-items: center;
+}
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    height: 70px;
+    background-color: aliceblue;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+}
+.item {
+    width: 60px;
+    height: 100%;
+    background-color: #a2a4ab;
+}
+.contacts p {
+    color: aliceblue;
+}

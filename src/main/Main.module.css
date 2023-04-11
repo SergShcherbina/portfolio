@@ -1,5 +1,5 @@
 .mainBlock {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #ffe770;
 
     display: flex;
@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .title{
@@ -19,4 +20,9 @@
     height: 300px;
     object-fit: cover;
     overflow: hidden;
+}
+@media(max-width: 800px) {
+    .wrapper {
+        justify-content: center;
+    }
 }
