@@ -1,0 +1,88 @@
+@import '../common/styles/variable';
+
+.idea {
+  background-color: $bgColorSecond;
+  display: flex;
+  align-items: center;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    border: 2px solid $borderColor;
+    background-color: $bgColorFirst;
+    padding: 40px;
+    border-radius: 10px;
+    @media(max-width: 650px) {
+      padding: 20px;
+    }
+
+    .formTitle {
+      color: $titleColor;
+      font-size: 32px;
+      font-weight: 400;
+      @media (max-width: 700px) {
+        font-size: 22px;
+      }
+    }
+
+    .subTitle {
+      margin-top: 10px;
+      color: $mainColor;
+      font-size: 16px;
+    }
+
+    .wrapperInput {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      & label {
+        width: 49%;
+        @media(max-width: 650px) {
+          width: 100%;
+        }
+      }
+    }
+
+    & input, textarea {
+      margin-top: 5px;
+      padding: 0.7rem 0.75rem;
+      font-size: 1rem;
+      background-color: $bgColorFirst;
+      color: $descriptionColor;
+      width: 100%;
+      box-shadow: none;
+      border: 1px solid $borderColor;
+      border-radius: 5px;
+
+      &:focus {
+        border: 1px solid $mainColor;
+        outline: $mainColor; //убираем толстую линию заменяя на hover
+      }
+    }
+
+    & textarea {
+      height: 70px;
+      resize: none;
+    }
+
+    & label {
+      color: $mainColor;
+      padding: 0;
+      font-size: 13px;
+    }
+
+    .button {
+      width: 100%;
+      background-color: $mainColor;
+      color: $iconColor;
+      border: none;
+      border-radius: 10px;
+      padding: 1.1rem;
+      font-size: 16px;
+    }
+  }
+}

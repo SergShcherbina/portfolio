@@ -1,0 +1,43 @@
+@import '../../common/styles/variable';
+
+.skill {
+  display: flex;
+  padding: 10px;
+  width: 32%;
+  background-color: $bgColorFirst;
+  border-radius: 10px;
+  gap: 10px;
+  list-style-type: none;
+  border: 2px solid $borderColor;
+  @media(max-width: 940px){
+    width: 45%;
+    @media(max-width: 735px){
+      width: 95%;
+      @media(max-width: 550px){
+        width: 100%;
+      }
+    }
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $iconColor;
+    height: 40px;
+    width: 40px;
+  }
+  .title {
+    color: $titleColor;
+  }
+  .descr {
+    color: $mainColor;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+}
+
+
+
+
+

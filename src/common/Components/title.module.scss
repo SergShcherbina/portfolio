@@ -1,0 +1,22 @@
+@import '../styles/variable';
+
+.title {
+  padding-bottom: 45px;
+  font-size: 38px;
+  color: $titleColor;
+  position: relative;
+  text-transform: uppercase;
+  @media(max-width: 700px) {
+    font-size: 32px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    background-color: $mainColor;
+    width: 77px;
+    height: 3px;
+  }
+}
+

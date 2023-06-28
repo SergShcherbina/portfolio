@@ -1,0 +1,34 @@
+@import '../common/styles/variable';
+
+.contacts {
+  min-height: 300px;
+  background-color: $bgColorFirst;
+  display: flex;
+  align-items: center;
+
+  .wrapperList {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .listItem {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 0;
+      width: 356px;
+    }
+    .image img {
+      max-height: 203px;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+  }
+}
+
+
+
+
+

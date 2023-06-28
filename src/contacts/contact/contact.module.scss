@@ -1,0 +1,24 @@
+@import '../../common/styles/variable';
+
+.item {
+    list-style-type: none;
+    .wrapperConnect {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        height: 60px;
+        background-color: $bgColorSecond;
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid $borderColor;
+        padding: 10px;
+        .link{
+            cursor: pointer;
+        }
+        .descr {
+            color: $descriptionColor;
+            font-weight: 700;
+        }
+    }
+}
+

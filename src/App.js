@@ -1,24 +1,26 @@
 import './App.css';
-import {Header} from "./header/Header";
 import {Main} from "./main/Main";
-import {Skills} from "./skils/Skills";
 import {MyWorks} from "./myWorks/MyWorks";
-import {Vacancie} from "./vacancies/Vacancie";
 import {Contacts} from "./contacts/Contacts";
+import {Idea} from "./idea/Idea";
 import {Footer} from "./footer/Footer";
+import {Skills} from "./skills/Skills";
+import {Menu} from "./nav/Menu/Menu";
+import {Header} from "./Header/Header";
 
 function App() {
-  return (
-    <div className="App">
-        <Header/>
-        <Main/>
-        <Skills/>
-        <MyWorks/>
-        <Vacancie/>
-        <Contacts/>
-        <Footer/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header/>
+            <Menu/>
+            <Main/>
+            <Skills/>
+            <MyWorks/>
+            <Idea/>
+            <Contacts/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;

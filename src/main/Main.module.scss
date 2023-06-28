@@ -1,0 +1,108 @@
+@import './src/common/styles/variable.scss';
+
+.mainBlock {
+  min-height: 100vh;
+  background-color: $bgColorFirst;
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+  @media(max-width: 950px) {
+    min-height: 100%;
+  }
+
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    @media(max-width: 800px) {
+      justify-content: center;
+      flex-direction: column-reverse;
+      gap: 50px
+    }
+
+    .wrapperPhoto {
+      max-width: 600px;
+      max-height: 600px;
+      background-color: #b2ade3;
+      border-radius: 40px;
+      position: relative;
+
+      .photo {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .firstFigure {
+        position: absolute;
+        top: -23px;
+        right: -23px;
+      }
+
+      .secondFigure {
+        position: absolute;
+        left: -26px;
+        bottom: -26px;
+      }
+    }
+    .wrapperDescription{
+      display: flex;
+      flex-direction: column;
+      @media(max-width: 800px){
+        align-items: center;
+      }
+      .greetings {
+        font-size: 18px;
+        color: $titleColor;
+        @media(max-width: 700px) {
+          font-size: 16px;
+        }
+      }
+
+      .title {
+        color: $titleColor;
+        font-size: 50px;
+        padding: 10px 0;
+        @media(max-width: 700px) {
+          font-size: 35px;
+        }
+      }
+
+      .subTitle {
+        font-size: 22px;
+        color: $titleColor;
+        margin-bottom: 30px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 35px;
+        font-size: 18px;
+        background-color: $mainColor;
+        border: none;
+        border-radius: 10px;
+        color: $iconColor;
+        text-decoration: none;
+
+        .dowload {
+          margin-left: 7px;
+        }
+      }
+    }
+
+
+  }
+}
+
+
+
+
+
+
+
+
