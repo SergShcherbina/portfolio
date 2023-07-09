@@ -5,55 +5,54 @@
   background-color: $bgColorFirst;
   display: flex;
   align-items: center;
-  padding: 50px 0;
-  @media(max-width: 950px) {
-    min-height: 100%;
-  }
-
 
   .wrapper {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
-    @media(max-width: 800px) {
-      justify-content: center;
-      flex-direction: column-reverse;
-      gap: 50px
-    }
-
-    .wrapperPhoto {
-      max-width: 600px;
-      max-height: 600px;
-      background-color: #b2ade3;
-      border-radius: 40px;
-      position: relative;
-
-      .photo {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-
-      .firstFigure {
-        position: absolute;
-        top: -23px;
-        right: -23px;
-      }
-
-      .secondFigure {
-        position: absolute;
-        left: -26px;
-        bottom: -26px;
+    gap: 90px;
+    @media(max-width: 940px) {
+      @media(max-width: 800px) {
+        justify-content: center;
+        gap: 50px
       }
     }
-    .wrapperDescription{
+
+    .sircle {
+      border: 12px solid #282a2a;
+      border-radius: 50%;
+      @media (max-width: 550px) {
+        width: 80%;
+      }
+
+      .wrapperPhoto {
+        max-width: 600px;
+        max-height: 600px;
+        background-color: #b2ade3;
+        border-radius: 50%;
+        border: 12px solid #333438;
+        position: relative;
+
+        .photo {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+
+          &img {
+            //height: 100px;
+          }
+        }
+      }
+    }
+
+    .wrapperDescription {
       display: flex;
       flex-direction: column;
-      @media(max-width: 800px){
+      @media(max-width: 800px) {
         align-items: center;
       }
+
       .greetings {
         font-size: 18px;
         color: $titleColor;
@@ -94,8 +93,6 @@
         }
       }
     }
-
-
   }
 }
 

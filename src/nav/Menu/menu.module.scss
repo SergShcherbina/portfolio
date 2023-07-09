@@ -13,17 +13,23 @@
   background-color: $bgColorSecond;
   padding-top: 50px;
   border-right: 1px solid $borderColor;
+
   .listItem {
     display: flex;
     align-items: center;
     flex-direction: column;
     list-style-type: none;
     padding: 0;
-    gap: 25px;
+    gap: 30px;
   }
+
   @media (max-width: 940px) {
     left: -90px;
+    }
+    &.active{
+      left: 0px;
   }
 }
+
 
 

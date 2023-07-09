@@ -1,4 +1,4 @@
-@import "../common/styles/variable";
+@import "../../common/styles/variable";
 
 .header {
   position: fixed;
@@ -13,10 +13,10 @@
   transition: all .35s ease;
   .hamburger{
     position: absolute;
-    top: 10px;
+    top: 8px;
     right: 5%;
-    height: 30px;
-    width: 30px;
+    height: 34px;
+    width: 35px;
     background: $mainColor;
     border-radius: 10px;
     cursor: pointer;

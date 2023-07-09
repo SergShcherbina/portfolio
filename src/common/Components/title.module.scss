@@ -6,6 +6,7 @@
   color: $titleColor;
   position: relative;
   text-transform: uppercase;
+  line-height: 1.5rem;
   @media(max-width: 700px) {
     font-size: 32px;
   }

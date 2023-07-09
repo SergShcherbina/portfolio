@@ -6,12 +6,11 @@ import {Idea} from "./idea/Idea";
 import {Footer} from "./footer/Footer";
 import {Skills} from "./skills/Skills";
 import {Menu} from "./nav/Menu/Menu";
-import {Header} from "./Header/Header";
 
 function App() {
     return (
         <div className="App">
-            <Header/>
+            {/*<BurgerMenu/>*/}
             <Menu/>
             <Main/>
             <Skills/>

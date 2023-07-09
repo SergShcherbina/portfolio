@@ -7,10 +7,11 @@ import {Contact} from "./contact/Contact";
 import {IconZoom} from "../assets/icons/IconZoom";
 import {IconTelegram} from "../assets/icons/iconTelegram";
 import {IconEmail} from "../assets/icons/IconEmail";
+import {sectionIdName} from "../common/variableReact/sectionIdName";
 
 export const Contacts = () => {
     return (
-        <div className={styles.contacts}>
+        <div id={sectionIdName.contacts} className={styles.contacts}>
             <div className={s.container} >
                 <Title text={'Контакты'} />
                 <div className={styles.wrapperList}>

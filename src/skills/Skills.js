@@ -11,12 +11,13 @@ import {IconGit} from "../assets/icons/iconGit";
 import {IconRedux} from "../assets/icons/iconRedux";
 import {IconPostman} from "../assets/icons/IconPostman";
 import {IconTypescript} from "../assets/icons/iconTypescript";
+import {sectionIdName} from "../common/variableReact/sectionIdName";
 
 export const Skills = () => {
     return (
-        <div className={styles.aboutMe}>
+        <div id={sectionIdName.skills} className={styles.aboutMe}>
             <div className={s.container}>
-                <Title text={'Навыки'}/>
+                <Title text={'Skills'}/>
                 <div>
                     <ul className={styles.wrapperSkills}>
                         <Skill

@@ -2,19 +2,19 @@ import React from 'react';
 import styles from "./Main.module.scss"
 import styleContainer from '../common/styles/container.module.scss'
 import avatar from '../assets/img/avatar.png'
-import {SvgFigure} from "../assets/icons/SvgFigure";
 import {IconDowload} from "../assets/icons/IconDowload";
+import {sectionIdName} from "../common/variableReact/sectionIdName";
 
 
 export const Main = () => {
     return (
-        <div className={styles.mainBlock}>
+        <div id={sectionIdName.main} className={styles.mainBlock}>
             <div className={styleContainer.container}>
                 <div className={styles.wrapper}>
-                    <div className={styles.wrapperPhoto}>
-                        <p className={styles.firstFigure}><SvgFigure /></p>
-                        <img className={styles.photo} src={avatar}/>
-                        <p className={styles.secondFigure}><SvgFigure /></p>
+                    <div className={styles.sircle}>
+                        <div className={styles.wrapperPhoto}>
+                            <img className={styles.photo} src={avatar}/>
+                        </div>
                     </div>
                     <div className={styles.wrapperDescription}>
                         <p className={styles.greetings}> 👋 Привет! Меня зовут </p>

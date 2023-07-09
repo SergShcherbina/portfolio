@@ -6,10 +6,11 @@ import {Title} from "../common/Components/Title";
 import socialNetwork from '../assets/img/social.jpg'
 import marvel from '../assets/img/marvel.jpg'
 import todo from '../assets/img/todolist.jpg'
+import {sectionIdName} from "../common/variableReact/sectionIdName";
 
 export const MyWorks = () => {
     return (
-        <div className={style.works}>
+        <div id={sectionIdName.myWorks} className={style.works}>
             <div className={styles.container}>
                 <Title text={'Мои работы'}/>
                 <div className={style.wrapper}>
