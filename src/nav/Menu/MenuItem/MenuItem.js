@@ -10,12 +10,12 @@ export const MenuItem = (props) => {
               to={props.name}
               spy={true}
               smooth={true}
-              offset={props.name === sectionIdName.contacts ? -170 : -50}
+              offset={props.name === sectionIdName.contacts ? -400 : -50}
               duration={500}
               delay={100}
         >
-            <li className={styles.item}>
-                <p className={styles.img}>
+            <li className={styles.wrapperItem}>
+                <p className={styles.item}>
                     <p className={styles.icon}>{props.svg}</p>
                     <span className={props.class}></span>
                 </p>

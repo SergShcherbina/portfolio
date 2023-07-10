@@ -9,6 +9,13 @@
   gap: 10px;
   list-style-type: none;
   border: 2px solid $borderColor;
+  transition: all 0.2s;
+  &:hover{
+    box-shadow: 0px 0px 5px $mainColor;
+    & .icon svg{
+      transform: scale(1.2);
+    }
+  }
   @media(max-width: 940px){
     width: 45%;
     @media(max-width: 735px){
@@ -26,6 +33,9 @@
     background-color: $iconColor;
     height: 40px;
     width: 40px;
+    & svg {
+      transition: all .2s;
+    }
   }
   .title {
     color: $titleColor;

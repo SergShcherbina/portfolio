@@ -23,7 +23,6 @@ export const Menu = () => {
             {id: 2, img: listAlt, name: sectionIdName.myWorks},
             {id: 3, img: contact, name: sectionIdName.contacts},
         ]
-
         const [isOpen, setOpenClose] = useState(false)
 
         const handleMenuToggle = () => {
@@ -44,7 +43,7 @@ export const Menu = () => {
             <nav tabIndex={0}
                  onBlur={handleMenuClose}
             >
-                <BurgerMenu handleMenuToggle={handleMenuToggle}/>
+                <BurgerMenu handleMenuToggle={handleMenuToggle} isOpen={isOpen}/>
                 <div className={styles.menu + ' ' + (isOpen ? styles.active : ' ')}>
                     <ul className={styles.listItem}>
                         {mappedMenuItem}

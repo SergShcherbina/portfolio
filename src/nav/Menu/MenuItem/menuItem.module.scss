@@ -1,6 +1,6 @@
 @import '../../../common/styles/variable';
 
-.item {
+.wrapperItem {
   display: flex;
   position: relative;
   align-items: center;
@@ -8,13 +8,18 @@
   color: $titleColor;
   gap: 5px;
 
-  .img {
+  &:hover {
+    .icon{
+      transform: scale(1.2);
+    }
+  }
+
+  .item {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 35px;
     position: relative;
-    transition: all 3s ease-in-out;
     &:before{
       content: '';
       position: absolute;
@@ -26,8 +31,10 @@
       opacity: 0;
       transition: all 0.2s cubic-bezier(0.22, 0.91, 0.99, 0.99);
     }
+
     .icon{
       z-index: 15;
+      transition: all .1s ;
     }
   }
 
@@ -37,11 +44,10 @@
 }
 
 .active{
-  .item{
-    .img:before{
+  .wrapperItem{
+    .item:before{
       opacity: 1;
     }
-
   }
 }
 

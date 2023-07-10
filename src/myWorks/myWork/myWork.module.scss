@@ -8,6 +8,17 @@
   border-radius: 10px;
   background-color: $bgColorSecond;
   padding: 10px;
+
+  &:hover {
+    .wrapperContent{
+      bottom: 30px;
+      opacity: 1;
+    }
+    .img {
+      transform: scale(1.02);
+    }
+
+  }
   @media(max-width: 1055px){
     width: 48%;
     @media(max-width: 735px){
@@ -22,6 +33,7 @@
     height: 100%;
     overflow: hidden;
     border-radius: 8px;
+    transition: all 0.3s;
 
     & img {
       height: 100%;
@@ -36,9 +48,11 @@
     border-radius: 10px;
     border: 2px solid $borderColor;
     background-color: $bgColorFirst;
-    bottom: 20px;
     left: 10%;
     padding: 10px;
+    bottom: -40px;
+    opacity: 0;
+    transition: all .3s;
 
     .title {
       font-size: 16px;
@@ -48,7 +62,7 @@
 
     .linkWork {
       position: absolute;
-      right: 0px;
+      right: 0;
       top: 7px;
       cursor: pointer;
     }

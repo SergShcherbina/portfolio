@@ -13,7 +13,7 @@ export const MyWorks = () => {
         <div id={sectionIdName.myWorks} className={style.works}>
             <div className={styles.container}>
                 <Title text={'Мои работы'}/>
-                <div className={style.wrapper}>
+                <ul className={style.wrapper}>
                     <MyWork title={'MARVEL'}
                             desr={' lorem  lorem  lorem  lorem  lorem  lorem lorem  '}
                             src={marvel}
@@ -28,7 +28,7 @@ export const MyWorks = () => {
                         desr={' lorem  lorem  lorem  lorem  lorem  lorem '}
                         src={todo}
                         href={'#'}/>
-                </div>
+                </ul>
             </div>
         </div>
     );

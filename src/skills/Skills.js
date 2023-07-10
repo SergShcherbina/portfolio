@@ -12,13 +12,14 @@ import {IconRedux} from "../assets/icons/iconRedux";
 import {IconPostman} from "../assets/icons/IconPostman";
 import {IconTypescript} from "../assets/icons/iconTypescript";
 import {sectionIdName} from "../common/variableReact/sectionIdName";
+import Fade from 'react-reveal/Fade';
 
 export const Skills = () => {
     return (
         <div id={sectionIdName.skills} className={styles.aboutMe}>
             <div className={s.container}>
                 <Title text={'Skills'}/>
-                <div>
+                <Fade>
                     <ul className={styles.wrapperSkills}>
                         <Skill
                             icon={<IconHtml/>}
@@ -52,10 +53,10 @@ export const Skills = () => {
                             icon={<IconPostman/>}
                             title={'Postman'}
                             deskr={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed'}/>
-
                     </ul>
-                </div>
-            </div>
+                </Fade>
         </div>
-    );
+</div>
+)
+    ;
 };

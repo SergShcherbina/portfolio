@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './burgerMenu.module.scss';
 
 export const BurgerMenu = (props) => {
@@ -10,10 +10,10 @@ export const BurgerMenu = (props) => {
     return (
         <div className={styles.header}>
             <div
-                className={styles.hamburger}
+                className={styles.burger}
                 onClick={handleMenuToggle}
             >
-                <span></span>
+                <span className={props.isOpen ? styles.active : ' '}></span>
             </div>
         </div>
     );

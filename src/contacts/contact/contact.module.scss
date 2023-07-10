@@ -2,23 +2,35 @@
 
 .item {
     list-style-type: none;
+
     .wrapperConnect {
         display: flex;
-        gap: 10px;
         align-items: center;
+        cursor: pointer;
         height: 60px;
         background-color: $bgColorSecond;
         width: 100%;
         border-radius: 10px;
         border: 2px solid $borderColor;
         padding: 10px;
-        .link{
-            cursor: pointer;
+        transition: all .2s;
+        &:hover {
+            background-color: $borderColor;
+            border: 2px solid $mainColor;
+            & .content svg {
+                fill: $mainColor;
+            }
         }
-        .descr {
-            color: $descriptionColor;
-            font-weight: 700;
+        .content{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .descr {
+                color: $descriptionColor;
+                font-weight: 700;
+            }
         }
+
     }
 }
 

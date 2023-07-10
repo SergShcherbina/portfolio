@@ -2,9 +2,9 @@ import React from 'react';
 
 export const IconZoom = () => {
     return (
-        <svg height='45px' width='45px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1329.08 1329.08" shape-rendering="geometricPrecision"
-             text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
-             clip-rule="evenodd">
+        <svg height='45px' width='45px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1329.08 1329.08" shapeRendering="geometricPrecision"
+             textRendering="geometricPrecision" imageRendering="optimizeQuality" fillRule="evenodd"
+             clipRule="evenodd">
             <defs>
             </defs>
             <g id="Layer_x0020_1">
