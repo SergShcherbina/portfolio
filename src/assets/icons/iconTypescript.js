@@ -2,7 +2,7 @@ import React from 'react';
 
 export const IconTypescript = () => {
     return (
-        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="1.3rem" height="1.4rem">
+        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="1.2rem" height="1.2rem">
             {/*<style>.st0{fill:#007acc}.st1{fill:#fff}</style>*/}
             <path fill= '#004a77' d="M0 200V0h400v400H0"/>
             <path fill= '#c2e7ff'

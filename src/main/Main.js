@@ -1,4 +1,4 @@
-import React, {useCallback} from 'react';
+import React from 'react';
 import styles from "./Main.module.scss"
 import styleContainer from '../common/styles/container.module.scss'
 import avatar from '../assets/img/avatar.png'
@@ -28,11 +28,14 @@ export const Main = () => {
                             </div>
                             <div className={styles.subTitle}>
                                 <ReactTypingEffect
-                                text={'я front-end разработчик'}
-                                speed={100}
+                                    text={'я front-end разработчик'}
+                                    speed={100}
                                 />
                             </div>
-                            <a className={styles.button} > Cкачать CV <p className={styles.download}><IconDownload/></p>
+                            <a className={styles.button}
+                               href='../assets/img/logoReact.png'
+                               download={'cv.pdf'}
+                            > Cкачать CV <p className={styles.download}><IconDownload/></p>
                             </a>
                         </div>
                     </div>
