@@ -3,4 +3,5 @@ export const sectionIdName = {
     skills: 'Skills',
     myWorks: 'Portfolio',
     contacts: 'Contacts',
+    idea: 'Idea'
 }

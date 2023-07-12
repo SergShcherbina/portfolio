@@ -8,22 +8,27 @@ import {
     faListAlt,
     faContactBook,
     faBriefcase,
-    faHome
+    faHome,
+    faFeatherPointed
 } from '@fortawesome/free-solid-svg-icons';
 
 
 export const Menu = () => {
+        const [isOpen, setOpenClose] = useState(false)
+
         const home = <FontAwesomeIcon icon={faHome}/>
         const briefcase = <FontAwesomeIcon icon={faBriefcase}/>
         const listAlt = <FontAwesomeIcon icon={faListAlt}/>
         const contact = <FontAwesomeIcon icon={faContactBook}/>
+        const pointed = <FontAwesomeIcon icon={faFeatherPointed}/>
+
         const dataMenu = [
             {id: 0, img: home, name: sectionIdName.main},
             {id: 1, img: briefcase, name: sectionIdName.skills},
             {id: 2, img: listAlt, name: sectionIdName.myWorks},
-            {id: 3, img: contact, name: sectionIdName.contacts},
+            {id: 3, img: pointed, name: sectionIdName.idea},
+            {id: 4, img: contact, name: sectionIdName.contacts},
         ]
-        const [isOpen, setOpenClose] = useState(false)
 
         const handleMenuToggle = () => {
             setOpenClose(!isOpen)

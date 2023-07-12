@@ -1,20 +1,23 @@
 @import '../common/styles/variable';
 
 .works {
-    background-color: $bgColorFirst;
+  background-color: $bgColorFirst;
+  display: flex;
+  align-items: center;
+
+  .wrapper {
     display: flex;
-    align-items: center;
-    .wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 10px;
-        @media(max-width: 1055px) {
-            justify-content: space-around;
-            @media(max-width: 735px) {
-                justify-content: center;
-            }
-        }
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    @media(max-width: 1055px) {
+      justify-content: space-around;
+      @media(max-width: 735px) {
+        justify-content: center;
+      }
     }
+  }
 }

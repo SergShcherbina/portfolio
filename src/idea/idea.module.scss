@@ -77,16 +77,18 @@
 
     .button {
       width: 100%;
-      background-color: $mainColor;
       color: $iconColor;
       border: none;
       border-radius: 10px;
-      padding: 1.1rem;
+      padding: 0 1.1rem;
+      height: 55px;
       font-size: 16px;
-      transition: all .2s;
+      box-shadow: 0 0 15px 65px $mainColor inset, 0 0 0 0 $mainColor;
+      transition: all 150ms ease-in-out;
       &:hover {
-        background-color: $iconColor;
-        color: $mainColor;}
+        box-shadow: 0 0 10px 0 $mainColor inset, 0 0 10px 4px $mainColor;
+        background-color: $bgColorFirst;
+      }
     }
   }
 }

@@ -10,7 +10,7 @@ export const MenuItem = (props) => {
               to={props.name}
               spy={true}
               smooth={true}
-              offset={props.name === sectionIdName.contacts ? -400 : -50}
+              offset={props.name === sectionIdName.idea ? -200 : props.name === sectionIdName.contacts ? -180 : -100}
               duration={500}
               delay={100}
         >
