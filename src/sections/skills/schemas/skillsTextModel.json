@@ -1,0 +1,44 @@
+{
+    "skills":[
+      {
+        "iconId": "html",
+        "title": "HTML",
+        "description": "Описание навыка"
+      },
+      {
+        "iconId": "css",
+        "title": "CSS",
+        "description": "Описание навыка"
+      },
+      {
+        "iconId": "js",
+        "title": "LS",
+        "description": "Описание навыка"
+      },
+      {
+        "iconId": "ts",
+        "title": "TS",
+        "description": "Описание навыка"
+      },
+      {
+        "iconId": "react",
+        "title": "REACT",
+        "description": "Описание навыка"
+      },
+      {
+        "iconId": "redux",
+        "title": "REDUX",
+        "description": "Описание навыка"
+      },
+      {
+        "iconId": "git",
+        "title": "git",
+        "description": "Описание навыка"
+      },
+      {
+        "iconId": "postman",
+        "title": "postman",
+        "description": "Описание навыка"
+      }
+    ]
+}

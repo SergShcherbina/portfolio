@@ -1,0 +1,56 @@
+@import '../../../../common/styles/variable';
+
+
+.item > a {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: $titleColor;
+  text-decoration: none;
+  user-select: none;
+
+  & svg {
+    transition: transform 0.2s, color 0.3s;
+  }
+
+  &:hover {
+    & svg {
+      transform: scale(1.2);
+      transition: transform 0.2s;
+    }
+  }
+}
+
+.text {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $titleColor;
+    transition: all 0.3s;
+  }
+}
+
+.active {
+  .text::after {
+    width: 100%;
+    transition: all 0.3s;
+  }
+
+  & svg {
+    color: $mainColor;
+    transition: color 0.3s;
+  }
+}
+
+
+
+
+
+
+

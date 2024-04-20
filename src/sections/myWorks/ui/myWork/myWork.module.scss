@@ -1,0 +1,101 @@
+@import '../../../../common/styles/variable';
+
+.wrapperWork {
+  position: relative;
+  overflow: hidden;
+  width: 32%;
+  height: 300px;
+  border: 2px solid $borderColor;
+  border-radius: 10px;
+  background-color: $bgColorSecond;
+  padding: 10px;
+  &:hover {
+    .wrapperContent {
+      bottom: 30px;
+      opacity: 1;
+    }
+    .img {
+      filter: blur(2px);
+    }
+  }
+
+  .img {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 5px $mainColor;
+
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .wrapperContent {
+    width: 90%;
+    position: absolute;
+    border-radius: 10px;
+    border: 2px solid $borderColor;
+    background-color: $bgColorFirst;
+    left: 5%;
+    padding: 10px;
+    bottom: -40px;
+    opacity: 0;
+    transition: all .3s;
+
+    display: flex;
+    gap: 5px;
+
+    & > :first-child {
+      flex-grow: 1;
+    }
+
+    & > :last-child {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .title {
+      font-size: 16px;
+      color: $titleColor;
+    }
+
+    .description {
+      margin-top: 3px;
+      font-size: 13px;
+      color: $descriptionColor
+    }
+
+    .linkWork {
+      cursor: pointer;
+      transition: all .3s;
+      stroke: $mainColor;
+
+      &:hover{
+        transform: scale(1.2);
+      }
+    }
+
+  }
+
+  @media(max-width: 1055px) {
+    width: 48%;
+    @media(max-width: 735px) {
+      width: 80%;
+      @media(max-width: 550px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

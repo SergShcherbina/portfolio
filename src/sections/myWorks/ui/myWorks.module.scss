@@ -1,0 +1,22 @@
+@import '../../../common/styles/variable';
+
+.works {
+  background-color: $bgColorFirst;
+  display: flex;
+  align-items: center;
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    @media(max-width: 1055px) {
+      justify-content: space-around;
+      @media(max-width: 735px) {
+        justify-content: center;
+      }
+    }
+  }
+}

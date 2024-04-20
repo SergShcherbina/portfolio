@@ -1,0 +1,24 @@
+{
+  "contacts": [
+    {
+      "iconId": "telegram",
+      "description": "Telegram",
+      "link": "https://t.me/Serge_Shcherbina"
+    },
+    {
+      "iconId": "skype",
+      "description": "Skype",
+      "link": "https://join.skype.com/invite/GKlpaVcuTwY1"
+    },
+    {
+      "iconId": "email",
+      "description": "E-mail",
+      "link": "serge.shcherbina@hmail.com"
+    },
+    {
+      "iconId": "github",
+      "description": "Github",
+      "link": "https://github.com/SergShcherbina"
+    }
+  ]
+}

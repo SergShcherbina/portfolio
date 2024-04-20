@@ -1,0 +1,43 @@
+@import '../../../common/styles/variable';
+
+.item {
+    list-style-type: none;
+
+    .wrapperConnect {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        background-color: $bgColorFirst;
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid $borderColor;
+        padding: 10px;
+        transition: all .2s;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+            background-color: $borderColor;
+            border: 2px solid $mainColor;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            & > svg {
+                fill: $mainColor;
+                transition: all .2s;
+                width: 35px;
+                height: 35px;
+            }
+
+            .description {
+                color: $descriptionColor;
+                font-weight: 700;
+            }
+        }
+
+    }
+}
+
