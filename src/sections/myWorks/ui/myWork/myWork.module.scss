@@ -1,9 +1,9 @@
 @import '../../../../common/styles/variable';
 
 .wrapperWork {
+  flex: 1 0 300px;
   position: relative;
   overflow: hidden;
-  width: 32%;
   height: 300px;
   border: 2px solid $borderColor;
   border-radius: 10px;
@@ -78,16 +78,6 @@
       }
     }
 
-  }
-
-  @media(max-width: 1055px) {
-    width: 48%;
-    @media(max-width: 735px) {
-      width: 80%;
-      @media(max-width: 550px) {
-        width: 100%;
-      }
-    }
   }
 }
 

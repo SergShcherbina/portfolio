@@ -3,28 +3,25 @@
 .contacts {
   min-height: 550px;
   background-color: $bgColorSecond;
-  display: flex;
-  align-items: center;
 
-  .wrapperList {
+  .wrapperContent {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
 
-    .listItem {
+    .listItems {
       display: flex;
       flex-direction: column;
       gap: 10px;
       padding: 0;
       width: 356px;
+      @media(max-width: 1080px){
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 600px;
+      }
     }
-    .image img {
-      max-height: 203px;
-      width: 100%;
-      border-radius: 10px;
-    }
-
   }
 }
 

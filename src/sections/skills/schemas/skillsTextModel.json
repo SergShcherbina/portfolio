@@ -1,44 +1,121 @@
 {
     "skills":[
       {
-        "iconId": "html",
-        "title": "HTML",
-        "description": "Описание навыка"
+        "iconId": "mongoDB",
+        "title": "mongoDB"
       },
       {
-        "iconId": "css",
-        "title": "CSS",
-        "description": "Описание навыка"
-      },
-      {
-        "iconId": "js",
-        "title": "LS",
-        "description": "Описание навыка"
-      },
-      {
-        "iconId": "ts",
-        "title": "TS",
-        "description": "Описание навыка"
+        "iconId": "express",
+        "title": "express"
       },
       {
         "iconId": "react",
-        "title": "REACT",
-        "description": "Описание навыка"
+        "title": "REACT"
+      },
+      {
+        "iconId": "node",
+        "title": "node js"
+      },
+      {
+        "iconId": "ts",
+        "title": "TS"
       },
       {
         "iconId": "redux",
-        "title": "REDUX",
-        "description": "Описание навыка"
+        "title": "redux"
+      },
+      {
+        "iconId": "swagger",
+        "title": "swagger"
       },
       {
         "iconId": "git",
-        "title": "git",
-        "description": "Описание навыка"
+        "title": "git"
+      },
+      {
+        "iconId": "css-modules",
+        "title": "css modules"
+      },
+      {
+        "iconId": "js",
+        "title": "JS"
+      },
+      {
+        "iconId": "any",
+        "title": "rest api"
       },
       {
         "iconId": "postman",
-        "title": "postman",
-        "description": "Описание навыка"
+        "title": "postman"
+      },
+      {
+        "iconId": "redux",
+        "title": "RTK Query"
+      },
+      {
+        "iconId": "css",
+        "title": "CSS"
+      },
+      {
+        "iconId": "styled-components",
+        "title": "styled components"
+      },
+      {
+        "iconId": "tailwind",
+        "title": "tailwind"
+      },
+      {
+        "iconId": "radix",
+        "title": "radix ui"
+      },
+      {
+        "iconId": "html",
+        "title": "HTML"
+      },
+      {
+        "iconId": "any",
+        "title": "material ui"
+      },
+      {
+        "iconId": "bem",
+        "title": "БЭМ"
+      },
+      {
+        "iconId": "sass",
+        "title": "scss / sass"
+      },
+      {
+        "iconId": "swiper",
+        "title": "swiper"
+      },
+      {
+        "iconId": "rollup",
+        "title": "Rollup"
+      },
+      {
+        "iconId": "framer-motion",
+        "title": "framer motion"
+      },
+      {
+        "iconId": "eslint",
+        "title": "eslint"
+      },
+      {
+        "iconId": "any",
+        "title": "websocket io"
+      },
+      {
+        "iconId": "webpack",
+        "title": "webpack"
+      },
+
+      {
+        "iconId": "prettier",
+        "title": "prettier"
+      },
+      {
+        "iconId": "vite",
+        "title": "vite"
       }
     ]
 }

@@ -30,14 +30,17 @@
     .circle {
       border: 12px solid $bgColorSecond;;
       border-radius: 50%;
+      aspect-ratio: 1;
+      user-select: none;
 
-      @media (max-width: 550px) {
-        width: 80%;
-      }
+      //@media (max-width: 550px) {
+      //  width: 80%;
+      //  height: 80vw;
+      //}
 
       .wrapperPhoto {
-        max-width: 600px;
-        max-height: 600px;
+        width: clamp(150px, 80vw, 360px);
+        height: clamp(150px, 80vw, 360px);;
         background-color: $bgColorThird;
         border-radius: 50%;
         border: 12px solid #19283b;;
@@ -84,8 +87,9 @@
         }
 
         .logoReact {
-          align-items: center;
-          height: 50px;
+          height: 60px;
+          width: 60px;
+          fill: $mainColor;
           animation: 12s linear infinite rotate;
           .download {
             margin-left: 7px;

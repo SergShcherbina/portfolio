@@ -15,8 +15,8 @@ export const Contacts = () => {
             <div className={s.container} >
                 <Title text={sectionIdName.contacts} />
                 <Fade>
-                    <div className={styles.wrapperList}>
-                        <ul className={styles.listItem}>
+                    <div className={styles.wrapperContent}>
+                        <ul className={styles.listItems}>
                             {contactTextModel.contacts.map(({iconId, description, link}) => {
                                return <ContactItem
                                     key={description}
@@ -28,7 +28,6 @@ export const Contacts = () => {
                         </ul>
 
                         <Form/>
-
                     </div>
                 </Fade>
             </div>

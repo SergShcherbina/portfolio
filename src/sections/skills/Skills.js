@@ -14,11 +14,10 @@ export const Skills = () => {
                 <Title text={sectionIdName.skills}/>
                 <Fade>
                     <ul className={styles.wrapperSkills}>
-                        {skillsTextModel.skills.map(el => {
+                        {skillsTextModel.skills.map((el, i )=> {
                             return <Skill
-                                key={el.title}
+                                key={el.title + i}
                                 title={el.title}
-                                description={el.description}
                                 iconId={el.iconId}
                             />
                         })}

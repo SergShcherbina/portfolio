@@ -2,8 +2,12 @@
 
 .item {
     list-style-type: none;
+    @media(max-width: 1080px){
+        width: 100%;
+        flex: 1 0 200px
+    }
 
-    .wrapperConnect {
+    .wrapperContent {
         display: flex;
         align-items: center;
         cursor: pointer;

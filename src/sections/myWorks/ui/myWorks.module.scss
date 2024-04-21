@@ -12,11 +12,5 @@
     gap: 20px;
     list-style-type: none;
     padding: 0;
-    @media(max-width: 1055px) {
-      justify-content: space-around;
-      @media(max-width: 735px) {
-        justify-content: center;
-      }
-    }
   }
 }

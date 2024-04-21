@@ -20,7 +20,7 @@ export const Main = () => {
                     <div className={styles.wrapper}>
                         <div className={styles.circle}>
                             <div className={styles.wrapperPhoto}>
-                                <img className={styles.photo} src={avatar} ref={ref}/>
+                                <img className={styles.photo} src={avatar} ref={ref} alt={"user photo"}/>
                             </div>
                         </div>
                         <div className={styles.wrapperDescription}>
@@ -28,7 +28,7 @@ export const Main = () => {
 
                             <div className={styles.wrapperTitle}>
                                 <h1 className={styles.title} >{mainTextModel.name}</h1>
-                                    <img src={logoReact} className={styles.logoReact}/>
+                                <Icon iconId={"react"} className={styles.logoReact}/>
                             </div>
                             <div className={styles.subTitle}>
                                 <ReactTypingEffect
