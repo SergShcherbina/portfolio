@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b502fd12.css",
-    "main.js": "/portfolio/static/js/main.751af1c2.js",
+    "main.css": "/portfolio/static/css/main.a29d6591.css",
+    "main.js": "/portfolio/static/js/main.b16a0fda.js",
     "static/media/todolist.png": "/portfolio/static/media/todolist.0704038019663b800da4.png",
     "static/media/marvel-info-portal.png": "/portfolio/static/media/marvel-info-portal.37c86704fbe28f6105ed.png",
     "static/media/social-network.png": "/portfolio/static/media/social-network.792cccbb87e07b3d0564.png",
     "static/media/instabox-site.png": "/portfolio/static/media/instabox-site.b5a9f3a9a2f2dd73ec65.png",
+    "static/media/sprite.svg": "/portfolio/static/media/sprite.274a085878758f4de37a468cb1e65dd0.svg",
     "static/media/project-cards.png": "/portfolio/static/media/project-cards.2ddf72e4d83873510416.png",
     "static/media/avatar.png": "/portfolio/static/media/avatar.5bbeb0e8f863884ab8a4.png",
-    "static/media/sprite.svg": "/portfolio/static/media/sprite.5769b77cd0f3d12a6268b1f08ab622d8.svg",
     "index.html": "/portfolio/index.html",
-    "main.b502fd12.css.map": "/portfolio/static/css/main.b502fd12.css.map",
-    "main.751af1c2.js.map": "/portfolio/static/js/main.751af1c2.js.map"
+    "main.a29d6591.css.map": "/portfolio/static/css/main.a29d6591.css.map",
+    "main.b16a0fda.js.map": "/portfolio/static/js/main.b16a0fda.js.map"
   },
   "entrypoints": [
-    "static/css/main.b502fd12.css",
-    "static/js/main.751af1c2.js"
+    "static/css/main.a29d6591.css",
+    "static/js/main.b16a0fda.js"
   ]
 }
