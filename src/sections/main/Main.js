@@ -1,7 +1,6 @@
 import React from 'react';
 import avatar from '../../assets/images/avatar.png'
 import {sectionIdName} from "../../common/constans/sectionIdName";
-import logoReact from '../../assets/images/logoReact.png'
 import Debounce from 'react-reveal/Bounce';
 import ReactTypingEffect from 'react-typing-effect';
 import {useParallax} from "react-scroll-parallax";
