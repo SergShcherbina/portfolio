@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3c0d14e9.css",
-    "main.js": "/portfolio/static/js/main.ec5a663e.js",
+    "main.js": "/portfolio/static/js/main.21847715.js",
+    "static/media/blog.png": "/portfolio/static/media/blog.9b96666c73ef0b12dfae.png",
     "static/media/todolist.png": "/portfolio/static/media/todolist.0704038019663b800da4.png",
     "static/media/marvel-info-portal.png": "/portfolio/static/media/marvel-info-portal.37c86704fbe28f6105ed.png",
-    "static/media/social-network.png": "/portfolio/static/media/social-network.792cccbb87e07b3d0564.png",
+    "static/media/social-network.png": "/portfolio/static/media/social-network.e6bdf4e865816a922d7d.png",
     "static/media/instabox-site.png": "/portfolio/static/media/instabox-site.b5a9f3a9a2f2dd73ec65.png",
     "static/media/sprite.svg": "/portfolio/static/media/sprite.274a085878758f4de37a468cb1e65dd0.svg",
     "static/media/project-cards.png": "/portfolio/static/media/project-cards.2ddf72e4d83873510416.png",
     "static/media/avatar.png": "/portfolio/static/media/avatar.5bbeb0e8f863884ab8a4.png",
     "index.html": "/portfolio/index.html",
     "main.3c0d14e9.css.map": "/portfolio/static/css/main.3c0d14e9.css.map",
-    "main.ec5a663e.js.map": "/portfolio/static/js/main.ec5a663e.js.map"
+    "main.21847715.js.map": "/portfolio/static/js/main.21847715.js.map"
   },
   "entrypoints": [
     "static/css/main.3c0d14e9.css",
-    "static/js/main.ec5a663e.js"
+    "static/js/main.21847715.js"
   ]
 }
