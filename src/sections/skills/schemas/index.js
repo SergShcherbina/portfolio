@@ -1,4 +1,3 @@
+import skillsTextModel from './skillsTextModel.json'
 
-import skillsTextModel from './skillsTextModel.json';
-
-export {skillsTextModel}
+export { skillsTextModel }

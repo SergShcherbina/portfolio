@@ -2,9 +2,9 @@
 
 .item {
     list-style-type: none;
-    @media(max-width: 1080px){
+    @media (max-width: 1080px) {
         width: 100%;
-        flex: 1 0 200px
+        flex: 1 0 200px;
     }
 
     .wrapperContent {
@@ -16,7 +16,7 @@
         border-radius: 10px;
         border: 2px solid $borderColor;
         padding: 10px;
-        transition: all .2s;
+        transition: all 0.2s;
         text-transform: uppercase;
         text-decoration: none;
         &:hover {
@@ -31,7 +31,7 @@
 
             & > svg {
                 fill: $mainColor;
-                transition: all .2s;
+                transition: all 0.2s;
                 width: 35px;
                 height: 35px;
             }
@@ -41,7 +41,5 @@
                 font-weight: 700;
             }
         }
-
     }
 }
-

@@ -1,45 +1,43 @@
 @import '../../common/styles/variable';
 
 .title {
-  width: max-content;
-  padding-bottom: 45px;
-  font-size: 38px;
-  color: $titleColor;
-  position: relative;
-  text-transform: uppercase;
-  line-height: 1.5rem;
+    width: max-content;
+    padding-bottom: 45px;
+    font-size: 38px;
+    color: $titleColor;
+    position: relative;
+    text-transform: uppercase;
+    line-height: 1.5rem;
 
-  //&:after {
-  //  content: "";
-  //  position: absolute;
-  //  bottom: 30px;
-  //  left: 0;
-  //  background-color: $mainColor;
-  //  height: 3px;
-  //  animation: fadeEffect 1s 2s forwards;
-  //}
+    //&:after {
+    //  content: "";
+    //  position: absolute;
+    //  bottom: 30px;
+    //  left: 0;
+    //  background-color: $mainColor;
+    //  height: 3px;
+    //  animation: fadeEffect 1s 2s forwards;
+    //}
 
-  .divider {
-    position: absolute;
-      bottom: 30px;
-      left: 0;
-      background-color: $mainColor;
-      height: 3px;
-      animation: fadeEffect 1s 2s forwards;
-  }
+    .divider {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        background-color: $mainColor;
+        height: 3px;
+        animation: fadeEffect 1s 2s forwards;
+    }
 
-
-  @media(max-width: 700px) {
-    font-size: 32px;
-  }
+    @media (max-width: 700px) {
+        font-size: 32px;
+    }
 }
 
 @keyframes fadeEffect {
-  from {
-      width: 0;
-  }
-  to {
-    width: 50%;
-  }
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
 }
-

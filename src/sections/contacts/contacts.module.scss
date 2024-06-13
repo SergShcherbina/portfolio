@@ -1,31 +1,26 @@
 @import '../../common/styles/variable';
 
 .contacts {
-  min-height: 550px;
-  background-color: $bgColorSecond;
+    min-height: 550px;
+    background-color: $bgColorSecond;
 
-  .wrapperContent {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-
-    .listItems {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      padding: 0;
-      width: 356px;
-      @media(max-width: 1080px){
-        flex-direction: row;
+    .wrapperContent {
+        display: flex;
+        justify-content: space-around;
         flex-wrap: wrap;
-        width: 600px;
-      }
+        gap: 20px;
+
+        .listItems {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 0;
+            width: 356px;
+            @media (max-width: 1080px) {
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 600px;
+            }
+        }
     }
-  }
 }
-
-
-
-
-

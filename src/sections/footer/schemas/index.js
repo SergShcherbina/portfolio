@@ -1,3 +1,3 @@
-import footerTextModel from "./footerTextModel.json";
+import footerTextModel from './footerTextModel.json'
 
-export {footerTextModel}
+export { footerTextModel }

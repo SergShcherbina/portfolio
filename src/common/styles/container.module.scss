@@ -1,18 +1,16 @@
 .container {
-  width: 1300px;
-  margin: 0 auto;
-  padding: 70px 5px 70px 95px;
-  transition: all .35s ease;
-
-  @media(max-width: 1200px) {
+    width: 1300px;
+    margin: 0 auto;
     padding: 70px 5px 70px 95px;
-    width: 100%;
+    transition: all 0.35s ease;
 
-    @media (max-width: 940px) {
-      padding: 50px 0;
-      width: 95%;
+    @media (max-width: 1200px) {
+        padding: 70px 5px 70px 95px;
+        width: 100%;
+
+        @media (max-width: 940px) {
+            padding: 50px 0;
+            width: 95%;
+        }
     }
-  }
 }
-
-

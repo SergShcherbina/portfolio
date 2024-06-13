@@ -1,16 +1,16 @@
 @import '../../../common/styles/variable';
 
 .works {
-  background-color: $bgColorFirst;
-  display: flex;
-  align-items: center;
-
-  .wrapper {
+    background-color: $bgColorFirst;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    list-style-type: none;
-    padding: 0;
-  }
+    align-items: center;
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        list-style-type: none;
+        padding: 0;
+    }
 }

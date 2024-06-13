@@ -1,3 +1,3 @@
-import mainTextModel from "./mainTextModel.json";
+import mainTextModel from './mainTextModel.json'
 
-export {mainTextModel}
+export { mainTextModel }

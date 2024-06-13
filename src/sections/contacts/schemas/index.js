@@ -1,3 +1,3 @@
-import contactTextModel from "./contactTextModel.json";
+import contactTextModel from './contactTextModel.json'
 
-export {contactTextModel}
+export { contactTextModel }
