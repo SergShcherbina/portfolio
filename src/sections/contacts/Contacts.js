@@ -1,7 +1,7 @@
 import React from 'react'
 import { Title } from '../../Components'
 import { ContactItem } from './contact/ContactItem'
-import { sectionIdName } from '../../common/constans/sectionIdName'
+import { sectionIdName } from '../../constans/sectionIdName'
 import Fade from 'react-reveal/Fade'
 import { Form } from './form/Form'
 import { contactTextModel } from './schemas'

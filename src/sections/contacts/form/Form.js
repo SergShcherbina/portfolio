@@ -1,40 +1,23 @@
-import { Spinner } from '../../../assets/icons/Spinner'
-import React, { useState } from 'react'
-import emailjs from '@emailjs/browser'
+import React, { useEffect, useState } from 'react'
+import { Progress } from '../../../constans/status'
+import { getButtonContent } from '../../../helpers/getButtonContent'
+import { sendEmail } from '../../../helpers/sendEmail'
 import styles from './form.module.scss'
 
 export const Form = () => {
-    const [status, setStatus] = useState('idle')
+    const [status, setStatus] = useState(Progress.IDLE)
+    const [timerId, setTimerId] = useState(null)
 
-    const sendEmail = (e) => {
-        e.preventDefault()
-        setStatus('loading')
-        emailjs
-            .sendForm(
-                'service_qcjr2ut',
-                'template_b2uacdq',
-                e.target,
-                'dX6JivBF3e4HTgHoN'
-            )
-            .then(
-                (result) => {
-                    setStatus('success')
-                    e.target.reset()
-                },
-                (error) => {
-                    debugger
-                    setStatus('error')
-                    console.log(error)
-                }
-            )
-            .finally(() => {
-                setTimeout(() => {
-                    setStatus('idle')
-                }, 3000)
-            })
+    const sendEmailHandler = (e) => {
+        void sendEmail(e, setStatus, setTimerId)
     }
+
+    useEffect(() => {
+        return clearTimeout(timerId)
+    }, [timerId])
+
     return (
-        <form className={styles.form} onSubmit={sendEmail}>
+        <form className={styles.form} onSubmit={sendEmailHandler}>
             <div id={'Idea'}>
                 <h2 className={styles.formTitle}>
                     Есть идея? У меня есть навыки. Давайте объединимся.
@@ -43,48 +26,40 @@ export const Form = () => {
                     Расскажите о себе и Вашей идее.
                 </p>
             </div>
+
             <div className={styles.wrapperInput}>
                 <label>
-                    {' '}
-                    Ваше имя{' '}
+                    Ваше имя
                     <input
                         type={'text'}
                         name="firstName"
                         placeholder={'Ваше имя *'}
                         required={true}
-                    />{' '}
+                    />
                 </label>
                 <label>
-                    {' '}
-                    Ваш email{' '}
+                    Ваш email
                     <input
                         type={'email'}
                         name="email"
                         required={true}
                         placeholder={'Ваше email *'}
-                    />{' '}
+                    />
                 </label>
             </div>
+
             <label>
-                {' '}
-                Тема{' '}
+                Тема
                 <input type={'text'} name="theme" placeholder={'Тема идеи'} />
             </label>
+
             <label>
-                {' '}
-                Ваше сообщение{' '}
+                Ваше сообщение
                 <textarea name={'textarea'} placeholder={'...'} />
             </label>
+
             <button className={styles.button}>
-                {status === 'idle' ? (
-                    'Отправить сообщение'
-                ) : status === 'loading' ? (
-                    <Spinner />
-                ) : status === 'success' ? (
-                    'Сообщение отправлено'
-                ) : (
-                    'что то пошло не так '
-                )}
+                {getButtonContent(status)}
             </button>
         </form>
     )

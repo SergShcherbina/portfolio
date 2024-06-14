@@ -47,7 +47,7 @@ export const myWorksTextModel = [
         image: Marvel,
     },
     {
-        title: 'Instabox - сайт для услуг',
+        title: 'Instabox - сайт услуг',
         description: 'Основные технологии: HTML, CSS, JS, Swiper',
         linkToProject: 'https://sergshcherbina.github.io/inatsbox/dist/',
         linkToGithub: 'https://github.com/SergShcherbina/inatsbox',

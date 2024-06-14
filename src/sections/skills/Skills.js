@@ -1,7 +1,7 @@
 import React from 'react'
 import { Title } from '../../Components'
 import { Skill } from './skill/Skill'
-import { sectionIdName } from '../../common/constans/sectionIdName'
+import { sectionIdName } from '../../constans/sectionIdName'
 import Fade from 'react-reveal/Fade'
 import { skillsTextModel } from './schemas'
 import styles from './skills.module.scss'

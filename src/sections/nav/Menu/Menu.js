@@ -3,7 +3,7 @@ import styles from './menu.module.scss'
 import { MenuItem } from './MenuItem/MenuItem'
 import { BurgerMenu } from '../Burger/BurgerMenu'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { sectionIdName } from '../../../common/constans/sectionIdName'
+import { sectionIdName } from '../../../constans/sectionIdName'
 import {
     faListAlt,
     faContactBook,

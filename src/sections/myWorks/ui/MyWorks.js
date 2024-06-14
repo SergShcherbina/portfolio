@@ -3,7 +3,7 @@ import style from './myWorks.module.scss'
 import styles from '../../../common/styles/container.module.scss'
 import { MyWork } from './myWork/MyWork'
 import { Title } from '../../../Components'
-import { sectionIdName } from '../../../common/constans/sectionIdName'
+import { sectionIdName } from '../../../constans/sectionIdName'
 import { myWorksTextModel } from '../schemas/myWorksTextModel'
 
 export const MyWorks = () => {
