@@ -1,6 +1,6 @@
-import { Spinner } from '../assets/icons/Spinner'
+import { Spinner } from '../../../../assets/icons/Spinner'
 import React from 'react'
-import { Progress } from '../constans/status'
+import { Progress } from '../../../../constans/status'
 
 export const getButtonContent = (status) => {
     switch (status) {

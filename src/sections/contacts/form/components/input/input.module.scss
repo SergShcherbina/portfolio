@@ -1,0 +1,36 @@
+@import '../../../../../common/styles/variable';
+
+.label {
+  color: $mainColor;
+  padding: 0;
+  font-size: 13px;
+
+  .input {
+    margin-top: 5px;
+    padding: 0.7rem 0.75rem;
+    font-size: 1rem;
+    background-color: $bgColorFirst;
+    color: $descriptionColor;
+    width: 100%;
+    box-shadow: none;
+    border: 1px solid $borderColor;
+    border-radius: 5px;
+
+    &:focus {
+      outline: 1px solid $mainColor;
+    }
+    &:invalid[data-touched='true'] {
+      outline: 1px solid $danderColor;;
+
+      & + .error {
+        display: block;
+      }
+    }
+  }
+
+  .error {
+    display: none;
+    color: $danderColor;
+  }
+}
+

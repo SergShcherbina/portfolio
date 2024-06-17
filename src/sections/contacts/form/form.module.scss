@@ -29,46 +29,28 @@
         font-size: 16px;
     }
 
-    .wrapperInput {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-
-        & label {
-            width: 49%;
-            @media (max-width: 650px) {
-                width: 100%;
-            }
-        }
-    }
-
-    & input,
-    textarea {
-        margin-top: 5px;
-        padding: 0.7rem 0.75rem;
-        font-size: 1rem;
-        background-color: $bgColorFirst;
-        color: $descriptionColor;
-        width: 100%;
-        box-shadow: none;
-        border: 1px solid $borderColor;
-        border-radius: 5px;
-
-        &:focus {
-            border: 2px solid $mainColor;
-            outline: $mainColor; //убираем толстую линию заменяя на hover
-        }
-    }
-
-    & textarea {
-        height: 70px;
-        resize: none;
-    }
-
-    & label {
+    .label {
         color: $mainColor;
         padding: 0;
         font-size: 13px;
+
+        .textarea {
+            margin-top: 5px;
+            padding: 0.4rem 0.75rem;
+            font-size: 1rem;
+            background-color: $bgColorFirst;
+            color: $descriptionColor;
+            width: 100%;
+            box-shadow: none;
+            border: 1px solid $borderColor;
+            border-radius: 5px;
+            height: 70px;
+            resize: none;
+
+            &:focus {
+                outline: 1px solid $mainColor;
+            }
+        }
     }
 
     .button {

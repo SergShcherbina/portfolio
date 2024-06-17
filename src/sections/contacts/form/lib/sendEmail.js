@@ -1,4 +1,4 @@
-import { Progress } from '../constans/status'
+import { Progress } from '../../../../constans/status'
 import emailjs from '@emailjs/browser'
 
 export const sendEmail = async (e, setStatus, setTimerId) => {

@@ -1,12 +1,33 @@
 import React, { useEffect, useState } from 'react'
 import { Progress } from '../../../constans/status'
-import { getButtonContent } from '../../../helpers/getButtonContent'
-import { sendEmail } from '../../../helpers/sendEmail'
+import { getButtonContent } from './lib/getButtonContent'
+import { sendEmail } from './lib/sendEmail'
 import styles from './form.module.scss'
+import { inputModel } from './lib/inputModel'
+import { initialValues } from './lib/initialValuees'
+import { Input } from './components/input/Input'
 
 export const Form = () => {
     const [status, setStatus] = useState(Progress.IDLE)
     const [timerId, setTimerId] = useState(null)
+    const [formState, setFormState] = useState(initialValues)
+
+    const onChangeHandler = (e) => {
+        const value = e.target.value
+        const inputName = e.target.name
+        setFormState((prev) => ({
+            ...prev,
+            [inputName]: { value, touched: prev[inputName].touched },
+        }))
+    }
+
+    const onTouchedHandler = (e) => {
+        const inputName = e.target.name
+        setFormState((prev) => ({
+            ...prev,
+            [inputName]: { value: prev[inputName].value, touched: true },
+        }))
+    }
 
     const sendEmailHandler = (e) => {
         void sendEmail(e, setStatus, setTimerId)
@@ -27,37 +48,26 @@ export const Form = () => {
                 </p>
             </div>
 
-            <div className={styles.wrapperInput}>
-                <label>
-                    Ваше имя
-                    <input
-                        type={'text'}
-                        name="firstName"
-                        placeholder={'Ваше имя *'}
-                        required={true}
-                    />
-                </label>
-                <label>
-                    Ваш email
-                    <input
-                        type={'email'}
-                        name="email"
-                        required={true}
-                        placeholder={'Ваше email *'}
-                    />
-                </label>
-            </div>
+            {inputModel.map((item) => (
+                <Input
+                    {...item}
+                    key={item.name}
+                    item={item}
+                    formState={formState}
+                    onChange={onChangeHandler}
+                    onBlur={onTouchedHandler}
+                />
+            ))}
 
-            <label>
-                Тема
-                <input type={'text'} name="theme" placeholder={'Тема идеи'} />
+            <label className={styles.label}>
+                {'Ваше сообщение'}
+                <textarea
+                    name={'textarea'}
+                    placeholder={'...'}
+                    onChange={onChangeHandler}
+                    className={styles.textarea}
+                />
             </label>
-
-            <label>
-                Ваше сообщение
-                <textarea name={'textarea'} placeholder={'...'} />
-            </label>
-
             <button className={styles.button}>
                 {getButtonContent(status)}
             </button>
